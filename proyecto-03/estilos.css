@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero_div{
+    display: flex;
+    justify-content: space-between;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(./fotos/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50.2%, 49.8% 64.9%, 0% 49.8%);
+    z-index: -1;
+}
+.hero_title{
+    color: white;
+    margin: 35px 5px;
+}
+.nav_img{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.438);
+    z-index: 2;
+    margin: 35px 5px;
+
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    padding-top: 15px;
+    top: 0;
+    right: 0px;
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    gap: 25px;
+    transition: all .3s ease-in-out; 
+    z-index: 0;
+    display: none;
+}
+.ul_link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero_text{
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+}
+.hero_parragrapg{
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.art{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.art::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(180deg, #00000050 0%, #00000050 100%), url(./fotos/diseño.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.art_title{
+    color: white;
+    font-size: 40px;
+    padding: 5px 0;
+}
+.art_parragraph{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.art_link{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 35px;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.mostrar_diseños{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    width: 65%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.desing{
+    text-align: center;
+}
+.desing_img{
+    background-color: rgba(99, 99, 99, 0.137);
+    height: 40px;
+}
+.desing_text{
+    padding: 15px;
+}
